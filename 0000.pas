@@ -1,4 +1,4 @@
-﻿program z20;
+﻿      program z20;
 var x1,x2,y1,y2:integer;
 begin
   writeln('Введите координаты первой точки');

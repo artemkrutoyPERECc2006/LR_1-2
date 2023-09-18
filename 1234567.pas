@@ -1,11 +1,14 @@
-﻿program z3;
-var a,b,c,d:integer;
-begin 
-  Writeln('Введите число трехзначное');
-  read(a);
-  b:=a div 100;
-  c:=a mod 10 ;
-  d:=a mod 100 div 10;
-  writeln('перевертыж ',c,d,b);
-  
+﻿var
+    a,b,c:integer;
+begin
+write('Введите число ');
+readln(b);
+c := 0;
+    while b > 0 do 
+    begin
+        a := b mod 10;
+        c := c *10 + a;
+        b := b div 10;
+    end;
+    writeln('Перевернутое число ',c);
 end.
